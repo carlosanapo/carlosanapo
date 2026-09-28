@@ -1,34 +1,36 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: PhD researcher in experimental fluid dynamics
 
+# profile: false
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
-
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+  image: profile.jpg
+  image_circular: false
+selected_papers: false
+social: true
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: false
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a researcher at the [von Karman Institute for Fluid Dynamics](https://www.vki.ac.be/) and a PhD candidate at the [École polytechnique de Bruxelles](https://polytech.ulb.be/). My work focuses on the experimental and numerical study of high-speed gas jets and their dispersion in realistic atmospheric conditions.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I use large-scale particle image velocimetry, optical concentration measurements, and computational methods to connect fundamental turbulent-flow behaviour with practical questions in process safety. I am also interested in scientific software and GPU-accelerated data processing for large experimental datasets.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+## Research interests
+
+- Supersonic and underexpanded jet flow physics
+- Turbulent mixing and dispersion
+- Experimental fluid mechanics and optical diagnostics
+- Particle image velocimetry (PIV)
+- Light ExtinctionSpectroscopy (LES)
+- Turbulent transport in atmospheric boundary layers
+- Scientific computing, GPU acceleration, and reproducible data analysis
+
+My recent work examines how ambient boundary-layer flow changes the velocity and concentration fields of accidental-release-like jets, with the goal of improving engineering-scale dispersion models and safety assessment.

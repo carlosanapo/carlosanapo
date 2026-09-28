@@ -1,65 +1,26 @@
 ---
 layout: page
-title: projects
-permalink: /projects/
-description: A growing collection of your cool projects.
+title: Research
+permalink: /research/
+description: Research themes in high-speed jet dispersion, optical diagnostics, and scientific computing.
 nav: true
-nav_order: 3
-display_categories: [work, fun]
-horizontal: false
+nav_order: 1
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-  {% endfor %}
+## Supersonic jet dispersion
 
-{% else %}
+My doctoral research studies underexpanded, high-speed gas jets released into quiescent and atmospheric boundary-layer flows. The experiments reproduce industrial leakage scenarios and resolve both velocity and scalar concentration from the near field to the developed region. This work supports the validation of dispersion models used in process safety and loss prevention.
 
-<!-- Display projects without categories -->
+## Optical flow diagnostics
 
-{% assign sorted_projects = site.projects | sort: "importance" %}
+I use large-scale planar particle image velocimetry (PIV), Mie-scattering measurements, and related optical methods to obtain spatially resolved flow data. A central aim is to produce experimental datasets that capture the interaction between jet momentum, density differences, and realistic ambient flow.
 
-  <!-- Generate cards for each project -->
+## Scientific computing
 
-{% if page.horizontal %}
+Large imaging datasets require efficient, reproducible processing. I develop Python-based workflows and explore GPU acceleration with CuPy for PIV analysis, with an emphasis on scaling research software to large experimental campaigns.
 
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
-</div>
+## Earlier work
+
+I have also worked on the experimental and numerical characterization of industrial inlet particle separators for turboshaft and turboprop engines, combining aerodynamic testing, CFD, and Lagrangian particle tracking.
+
+Selected peer-reviewed and conference outputs are listed on the [publications page](/publications/).
