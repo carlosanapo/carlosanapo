@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: PhD researcher in experimental fluid dynamics
+subtitle: PhD candidate in fluid dynamics
 
 # profile: false
 profile:
